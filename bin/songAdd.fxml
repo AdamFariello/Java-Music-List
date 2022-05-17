@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="songAddController">
+   <children>
+      <GridPane prefHeight="358.0" prefWidth="601.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.6274009108909" minWidth="10.0" prefWidth="64.76021310918996" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="552.6940436721213" minWidth="10.0" prefWidth="537.0115705559399" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="68.90776314748338" minHeight="6.955735826621563" prefHeight="16.937281502476008" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="68.90776314748338" minHeight="10.0" prefHeight="32.87457440302336" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="121.51671730481368" minHeight="0.0" prefHeight="33.87456477551481" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="314.83425456270595" minHeight="7.955749662569218" prefHeight="33.870901591019816" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="314.83425456270595" minHeight="10.0" prefHeight="31.88193239411629" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="314.83425456270595" minHeight="10.0" prefHeight="213.21054903241014" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Song:" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Album:" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Artist:" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Year" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Text>
+            <TextField fx:id="TextFieldSong" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="TextFieldAlbum" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="TextFieldArtist" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="TextFieldEdit" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+      </GridPane>
+      <ButtonBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+            <Button alignment="TOP_CENTER" mnemonicParsing="false" onAction="#buttonClearFields" text="Clear Fields" />
+            <Button alignment="TOP_CENTER" mnemonicParsing="false" onAction="#buttonClose" text="Close" />
+          <Button alignment="TOP_CENTER" minWidth="0.0" mnemonicParsing="false" onAction="#buttonAddSong" prefHeight="27.0" text="Add Song" />
+        </buttons>
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </ButtonBar>
+   </children>
+</VBox>

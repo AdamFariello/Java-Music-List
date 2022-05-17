@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="songDisplayController">
+   <children>
+      <ListView fx:id="ListView" prefHeight="339.0" prefWidth="612.0" />
+      <ButtonBar prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#buttonAdd" text="add" />
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#buttonEdit" text="Edit" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#buttonDelete" text="delete" />
+        </buttons>
+         <VBox.margin>
+            <Insets right="150.0" />
+         </VBox.margin>
+      </ButtonBar>
+      <HBox alignment="TOP_CENTER" fillHeight="false" prefHeight="27.0" prefWidth="614.0" spacing="50.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <TextField fx:id="textFieldSong" editable="false" prefHeight="27.0" prefWidth="203.0" />
+            <TextField fx:id="textFieldArtist" editable="false" />
+            <TextField fx:id="textFieldAlbum" editable="false" />
+            <TextField fx:id="textFieldYear" editable="false" prefHeight="27.0" prefWidth="90.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+   </children>
+</VBox>
