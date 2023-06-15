@@ -1,0 +1,38 @@
+# Introduction
+## Where this repository comes from
+This repository is the work from, and for, the cs213 assignment: *"Song Library"*.   
+[The course](https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-213-software-methodology)
+was taken during Spring 2021
+
+---
+
+# REQUIREMENTS
+This project uses the JavaFX library to supply the gui.   
+To install, and setup the library, I recommend looking at tutorials such as 
+[this one](https://openjfx.io/openjfx-docs/#introduction)
+
+Other than that, Java version 17 (and below) should work.
+
+---
+
+# INSTALATION
+## Cloning the repository (via terminal)
+`git clone https://github.com/AdamFariello/Song-Library` 
+
+## Setting up the project
+
+### Using eclipse
+1. [Install eclipse](https://www.eclipse.org/downloads/packages/)
+
+1. Import project into eclipse with smart git import
+2. Add arguments for virtual machine:		
+"-–module-path –add-modules javafx.controls,javafx.fxml,javafx.media"
+> this argument might possible be in the project, if so: then ignore step 3
+ 
+### Other methods
+If some other method is required, or just wanted -- 
+look into the documentation for installation tips 
+
+# EXECUTION
+------------
+* Run file src/songlib.java
