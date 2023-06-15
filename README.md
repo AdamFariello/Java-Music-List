@@ -1,4 +1,4 @@
-# Music List
+# Java Music List
 
 ## Introduction
 ### What this program does
