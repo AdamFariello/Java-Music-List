@@ -1,4 +1,4 @@
-# Music-Library-List
+# Music List
 
 ## Introduction
 ### What this program does
