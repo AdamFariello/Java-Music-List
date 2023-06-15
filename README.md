@@ -12,8 +12,7 @@ The program also remembers the list inbetween sessions.
 
 ### Where this repository comes from
 This repository is the work from, and for, the cs213 assignment: *"Song Library"*.   
-[The course](https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-213-software-methodology)
-was taken during Spring 2021
+[The course](https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-213-software-methodology) was taken during Spring 2021
   
 ---
 
@@ -24,7 +23,7 @@ was taken during Spring 2021
 2. JavaFX 17 or higher (for the gui)
 
 ### Cloning the repository (via terminal)
-`git clone https://github.com/AdamFariello/Song-Library` 
+`git clone https://github.com/AdamFariello/Java-Music-List.git` 
 
 ### Downloading JavaFx
 Download the library [here](https://gluonhq.com/products/javafx/)
